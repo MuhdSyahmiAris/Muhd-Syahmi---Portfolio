@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Muhammed Syahmi bin Aris • Data Science Portfolio</title>
+    <title>Muhammed Syahmi • Data Science Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Google Font (optional but looks cleaner) -->
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="bg-glow"></div>
+    <div class="bg-orbit"></div>
 
+    <!-- NAVBAR -->
     <header class="nav">
         <div class="nav-inner">
             <div class="nav-logo">MS</div>
@@ -25,31 +26,30 @@
         </div>
     </header>
 
+    <!-- HERO -->
     <main>
-        <!-- HERO -->
         <section class="hero">
-            <div class="hero-text fade-in">
-                <p class="hero-kicker">Data Science | AI Student</p>
-                <p class="hero-kicker">Taylor's University</p>
-                <h1>Turning <span class="accent">data</span> into decisions.</h1>
-                <p class="hero-subtitle">
+            <div class="hero-left">
+                <p class="hero-kicker">Data Science & AI Student</p>
+                <h1>Building clear insights<br><span class="accent">from complex data.</span></h1>
+                <p class="hero-subtext">
                     I’m Muhammed Syahmi, a Computer Science student specialising in Data Science & AI. 
-                    I enjoy building models, exploring datasets, and creating clean, practical solutions 
-                    that actually help people.
+                    I enjoy exploring datasets, testing ideas, and turning results into something practical and easy to understand.
                 </p>
                 <div class="hero-actions">
                     <a class="btn primary" href="https://github.com/MuhdSyahmiAris" target="_blank">View GitHub</a>
                     <a class="btn ghost" href="#projects">See Projects</a>
                 </div>
             </div>
-            <div class="hero-card fade-in-delayed">
-                <div class="hero-card-inner">
-                    <p class="hero-tag">Currently</p>
-                    <h2>Exploring Data, Learning Fintech, Building Skills.</h2>
-                    <p class="hero-card-text">
-                        Interested in predictive modelling, analytics, and how data shapes real products.
+
+            <div class="hero-right">
+                <div class="info-card">
+                    <p class="card-label">Focus Areas</p>
+                    <h2>Analytics • Modelling • Visualisation</h2>
+                    <p class="card-text">
+                        Interested in predictive modelling, data storytelling, and how analytics supports real decisions in products.
                     </p>
-                    <div class="hero-meta">
+                    <div class="pill-row">
                         <span>Python</span>
                         <span>Machine Learning</span>
                         <span>Data Visualisation</span>
@@ -59,43 +59,55 @@
         </section>
 
         <!-- ABOUT -->
-        <section id="about" class="section fade-in">
+        <section id="about" class="section">
             <h2>About Me</h2>
             <p>
-                I’m a Data Science & AI student who enjoys working with real-world datasets, 
-                trying out different models, and understanding <em>why</em> something works — not just 
-                getting a high accuracy number. I like keeping things simple, clear, and useful.
+                I’m a Data Science & AI student who likes to keep things simple and structured. 
+                I enjoy working with real-world data, experimenting with different models, and understanding 
+                <em>why</em> something works—not just chasing a single metric. 
+                My goal is to build solutions that are both technically solid and easy for others to interpret.
             </p>
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects" class="section fade-in">
+        <section id="projects" class="section">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
                 <article class="project-card">
+                    <div class="project-header">
+                        <span class="dot"></span>
+                        <span class="project-type">Time Series</span>
+                    </div>
                     <h3>📈 Stock Price Prediction</h3>
                     <p>
-                        Built time-series models (LSTM + regression) to forecast stock price movements and 
-                        understand trends over time.
+                        Built forecasting models (LSTM + regression) to analyse stock price movements and 
+                        understand short-term trends using historical data.
                     </p>
-                    <!-- Add your real repo link when ready -->
                     <a href="#" class="project-link">GitHub repo (coming soon)</a>
                 </article>
 
                 <article class="project-card">
+                    <div class="project-header">
+                        <span class="dot"></span>
+                        <span class="project-type">Classification</span>
+                    </div>
                     <h3>💳 Credit Risk Classification</h3>
                     <p>
-                        Designed a classification model to estimate borrower risk levels using tabular data, 
-                        evaluation metrics, and feature importance.
+                        Designed a classification model to estimate borrower risk levels using tabular features, 
+                        evaluation metrics and feature importance to interpret results.
                     </p>
                     <a href="#" class="project-link">GitHub repo (coming soon)</a>
                 </article>
 
                 <article class="project-card">
-                    <h3>💡 Personal Finance Insights Dashboard</h3>
+                    <div class="project-header">
+                        <span class="dot"></span>
+                        <span class="project-type">Analytics</span>
+                    </div>
+                    <h3>💡 Finance Insights Dashboard</h3>
                     <p>
-                        Analysed spending patterns and created visual insights to show how behaviour changes 
-                        across time and categories.
+                        Explored spending behaviour and created visual insights to highlight trends, categories, 
+                        and changes over time.
                     </p>
                     <a href="#" class="project-link">GitHub repo (coming soon)</a>
                 </article>
@@ -103,23 +115,24 @@
         </section>
 
         <!-- VISION -->
-        <section id="vision" class="section fade-in">
+        <section id="vision" class="section">
             <h2>How I Think About Data</h2>
             <p>
-                I see data science as a mix of curiosity, structure, and communication. 
-                Curiosity to ask the right questions, structure to build solid models, and communication 
-                to turn results into something people can actually use.
+                I see data science as a mix of curiosity and structure: asking good questions, building clean 
+                pipelines, and communicating results clearly to others. 
+                I believe the future of data is about making complex ideas feel simple and useful for everyday decisions.
             </p>
         </section>
 
         <!-- CONTACT / PERSONAL -->
-        <section id="contact" class="section fade-in">
+        <section id="contact" class="section">
             <h2>Outside of Tech</h2>
             <p>
-                When I’m not working with data, you’ll probably find me watching basketball, movies, 
-                or a good series. It keeps my head clear and gives me new perspectives.
+                Outside of coding and datasets, I enjoy watching basketball, movies, and series. 
+                It keeps things balanced and gives me new ways of looking at stories, behaviour, and decisions.
             </p>
-            <div class="contact-box">
+
+            <div class="contact-card">
                 <p class="contact-label">Let’s connect</p>
                 <p>
                     <a href="mailto:go4syahmi@gmail.com">go4syahmi@gmail.com</a> · 
